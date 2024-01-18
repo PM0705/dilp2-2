@@ -1,0 +1,2262 @@
+@charset "UTF-8";
+
+/* 横スライド */
+.wrapper {
+  width: 100%;
+  min-width: 1320px;
+}
+
+/* flexと一緒に使えない */
+.pc-mode {
+  display: block;
+}
+
+.sp-mode {
+  display: none;
+}
+
+@media screen and (max-width:590px) {
+  .wrapper {
+    min-width: 350px;
+  }
+
+  /* flexと一緒に使えない */
+  .sp-mode {
+    display: block;
+  }
+
+  .pc-mode {
+    display: none;
+  }
+
+}
+
+
+
+body {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Zen+Kaku+Gothic", "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+/* sectionクラス単位のこと */
+.section {
+  padding: 80px 0;
+}
+
+section {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+/* sectionクラス単位のことSP */
+@media screen and (max-width:590px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  section {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+}
+
+/* ヘッダー */
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  font-size: 16px;
+}
+
+header li+li {
+  margin-left: 1%;
+}
+
+header ul img {
+  width: 300px;
+}
+
+header {
+  background-color: white;
+  margin: 20px 0px
+}
+
+/* SPヘッダー */
+@media screen and (max-width:590px) {
+  header {
+    width: 100%;
+    padding: 2vw;
+
+  }
+
+  header ul {
+    font-size: 16px;
+    display: grid;
+    height: 200px;
+    margin-top: 1%;
+    font-size: 16px;
+    justify-content: normal;
+  }
+
+  header ul img {
+    width: 100px;
+  }
+
+}
+
+/* firstsection */
+.topbartext-h2 {
+  background-color: #222a51;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.first-mainfield {
+  display: flex;
+  justify-content: center;
+}
+
+.first-textfield h2 {
+  background-color: white;
+  color: #ff9200;
+  font-size: 40px;
+  margin-top: 30px;
+  padding: 10px 30px;
+
+}
+
+.first-mainfield {
+  background-image: url(img/dilp2topmain.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background: contain;
+  background-position: center;
+  min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.first-mainfieldimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+}
+
+.first-mainfieldimg img {
+  width: 400px;
+}
+
+h1 {
+  font-size: 60px;
+  color: #fffc00;
+  margin-left: 30px;
+  margin: 30px;
+}
+
+h1 span {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.imgfield {
+  max-width: 2000px;
+}
+
+.imgfield img {
+  max-width: 100%;
+  height: auto;
+  width: 2000px;
+
+}
+
+
+.first-subtext {
+  margin-left: 30px;
+}
+
+.first-subtext ul {
+  margin-bottom: 45px;
+}
+
+.first-subtext ul li {
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  width: 650px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.first-subtext ul li+li {
+  margin-top: 10px;
+}
+
+.first-checkimg {
+  margin-right: 5px;
+}
+
+.first-checkimg img {
+  width: 30px;
+}
+
+.first {
+  background-image: url(img/dilp2topmain.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background: contain;
+  background-position: center;
+  min-height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* firstsectionSP */
+@media screen and (max-width:590px) {
+  h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: 15px;
+  }
+
+  h1 span {
+    font-size: 62px;
+    font-weight: bold;
+  }
+
+  .first-mainfield {
+    flex-direction: column;
+    background-image: none;
+    background-size: 265px;
+    background-repeat: no-repeat;
+    background: contain;
+    background-position: bottom 0px right 0px;
+    min-height: 667px;
+  }
+
+
+  .first-subtext ul li {
+    border-radius: 5px;
+    padding: 6px;
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .first-subtext {
+    margin-left: 2%;
+  }
+
+  .first-subtext ul {
+    margin-bottom: 35px;
+  }
+
+  .first-textfield {
+    min-height: 667px;
+  }
+
+  .imgfield {
+    position: relative;
+  }
+
+  .imgfield h2 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+    background-color: transparent;
+
+  }
+
+  .first {
+    background-image: url(img/dilp2topmain.png);
+    background-size: 362%;
+
+  }
+}
+
+
+
+
+/* troubleお困りではありませんか？ */
+.troublelistimg {
+  margin-right: 5px;
+}
+
+.troublelistimg img {
+  width: 30px;
+  vertical-align: baseline;
+}
+
+.troublelist ul {
+
+  margin: 0 auto;
+  width: 61%;
+  margin-bottom: 40px;
+
+}
+
+.troublelist ul li {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  box-sizing: border-box;
+  font-size: 30px;
+  padding: 19px 0;
+  font-size: 30px;
+}
+
+.troublefield {
+  background-image: url(img/trouble.jpg);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background: contain;
+  background-position: bottom -87px right 0px;
+  min-height: 400px;
+}
+
+._troublefield {
+  margin-top: 60px;
+}
+
+.trouble-voice {
+  display: flex;
+  justify-content: center;
+
+}
+
+.voicefield ul {
+  display: flex;
+  justify-content: center;
+  min-width: 1320px;
+  gap: 25px;
+}
+
+.voicefield ul li {
+  background-image: url(img/voice-bace.png);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background: contain;
+  background-position: center;
+  height: 400px;
+  width: 420px;
+}
+
+
+.voicefield-company p:nth-of-type(1) {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 42px;
+  color: white;
+}
+
+.voicefield-company p:nth-of-type(2) {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  padding: 5px 0 25px;
+}
+
+.voicefield-text {
+  font-size: 16px;
+  padding: 10px;
+  color: #222a51;
+}
+
+.voicefield-text {
+  padding: 38px;
+  font-size: 20px;
+}
+
+.voicefield-bottom {
+  font-size: 20px;
+  background-color: #222a51;
+  color: #fffc00;
+  padding: 20px 0;
+
+}
+
+.voicefield-bottom p {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+/* troubleお困りではありませんか？SP */
+@media screen and (max-width:590px) {
+  .troublefield {
+    background-image: none;
+
+
+  }
+
+  .troublelist ul li {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9px 0;
+    font-size: 16px;
+    align-items: baseline;
+  }
+
+  .troublefield .pr-title.position1.subtitle1 {
+    background-image: url(img/trouble.jpg);
+    background-size: 243px;
+    background-repeat: no-repeat;
+    background: contain;
+    background-position: bottom -44px right -67px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    color: #1d4f9c;
+  }
+
+  .troublefield>.pr-title h2 {
+    margin-left: 9%;
+    font-size: 16px;
+
+  }
+
+  ._troublefield.pr-title h2 {
+    width: 100%;
+    font-size: 16px;
+  }
+
+
+  /* そんなお困りごと解決・・・ */
+  .voicefield ul {
+    flex-direction: column;
+    min-width: 120px;
+    width: 350px;
+    gap: 0;
+  }
+
+  .voicefield ul li {
+    height: 360px;
+    background-size: 350px;
+    width: 350px;
+  }
+
+  .voicefield-company p:nth-of-type(1) {
+    font-size: 16px;
+    padding-top: 40px;
+    color: white;
+  }
+
+  .voicefield-company p:nth-of-type(2) {
+    font-size: 21px;
+    color: white;
+    padding: 5px 0 15px;
+  }
+
+  .voicefield-text {
+    padding: 47px;
+    font-size: 15px;
+  }
+
+  .troublelistimg img {
+    width: 22px;
+  }
+}
+
+
+
+
+
+
+/* h2title */
+.subtitle h2 {
+  font-size: 50px;
+  text-align: center;
+  color: #1d4f9c;
+}
+
+.subtitle1 h2 {
+  font-size: 50px;
+  text-align: center;
+  color: #1d4f9c;
+}
+
+.position.subtitle {
+  padding-bottom: 40px;
+}
+
+/*  h2titleSP */
+@media screen and (max-width:590px) {
+  .position.subtitle {
+    padding-bottom: 20px;
+  }
+
+  .subtitle h2 {
+    font-size: 20px;
+  }
+}
+
+
+/* フォーム帯 */
+.form {
+  padding: 80px;
+}
+
+.form-h2 {
+  padding-bottom: 40px;
+}
+
+.form h2 {
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(255, 0255, 255, 0.3);
+  background: linear-gradient(transparent 60%, #ff6 60%);
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
+
+.form-flexbox {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+}
+
+.form-tel {
+  border: solid 1px #333;
+  text-align: center;
+}
+
+.form-tel p:nth-of-type(1) {
+  background-color: #222a51;
+  font-size: 25px;
+  color: white;
+  padding: 25px 15px;
+
+}
+
+.form-tel p:nth-of-type(2) {
+  font-size: 35px;
+  margin-top: 35px;
+}
+
+.form-tel p:nth-of-type(3) {
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.form-document {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-document p:nth-of-type(1) {
+  background-color: #fb4a42;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+
+}
+
+.form-document p:nth-of-type(2) {
+  font-size: 25px;
+  padding: 10px 0;
+
+
+}
+
+.form-button {
+  margin: 0 auto;
+}
+
+
+/* フォーム帯SP */
+@media screen and (max-width:590px) {
+  .form {
+    padding: 40px 0;
+  }
+
+  .form h2 {
+    font-size: 20px;
+    background-image: none;
+  }
+
+  .form-flexbox {
+    flex-direction: column;
+  }
+
+  .form-document p:nth-of-type(2) {
+    font-size: 18px;
+  }
+
+  .form-document p:nth-of-type(1) {
+    font-size: 20px;
+    border-radius: 0px;
+  }
+
+  .form-tel {
+    width: 90%;
+  }
+}
+
+
+
+
+
+
+/* prD.I.Worksの強み */
+.pr.section>p:nth-child(1) {
+  font-size: 40px;
+  color: #1d4f9c;
+}
+
+.pr-corner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.pr {
+  background-color: #ffd71f;
+}
+
+
+
+.pr h2 span:nth-of-type(1) {
+  color: #fb4a42;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.pr h2 span:nth-of-type(2) {
+
+  font-size: 65px;
+
+}
+
+.pr>p {
+  text-align: center;
+}
+
+.pr-field {
+  width: 30%;
+  border: solid 1px white;
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 13px 0px rgba(0, 0, 0, 0.4);
+  padding: 20px 0;
+}
+
+
+
+.pr-fieldtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: dotted 1px #222a51;
+  padding: 20px 0;
+  width: 90%;
+  margin: 0 auto;
+  color: #222a51;
+}
+
+.pr-fieldtitle p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.primg {
+  position: relative;
+  width: 100px;
+  height: 70px;
+  margin-right: 10px
+}
+
+.primg img {
+  object-fit: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.pr-text {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-weight: 100;
+}
+
+.pr-text {
+  text-align: left;
+}
+
+/* prD.I.Worksの強み */
+@media screen and (max-width:590px) {
+  .pr.section>p:nth-child(1) {
+    font-size: 25px;
+
+  }
+
+  .pr .pr-title h2 {
+    width: 100%;
+    color: #1d4f9c;
+  }
+
+  .pr h2 span:nth-of-type(2) {
+    font-size: 46px;
+    font-weight: bold;
+  }
+
+  .pr h2 span:nth-of-type(1) {
+    font-size: 60px;
+  }
+
+  .pr-corner {
+
+    justify-content: center;
+  }
+
+  .pr-field {
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.4);
+  }
+
+  .pr-fieldtitle {
+    padding: 10px 0;
+    width: 95%;
+
+  }
+
+
+
+  .pr-text {
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  .pr p {
+    font-size: 16px;
+  }
+
+  .primg {
+    margin: 0;
+    width: 20%;
+    height: 50px;
+  }
+
+  .pr-fieldtitle p {
+    font-size: 25px;
+
+  }
+
+}
+
+/* industry業種紹介 */
+.industry {
+  background-image: url(img/dilp2bimg.png);
+  background-size: 142%;
+  background-repeat: no-repeat;
+  background: contain;
+  background-position: left;
+  width: 100%;
+  overflow: hidden;
+  min-height: 900px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.industry h2 {
+  color: #ffd71f;
+  ;
+}
+
+.industry>p {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+
+.industry .pr-title p {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.industry-field {
+  padding: 40px 0;
+  width: 50%;
+  margin-left: auto;
+  padding: 40px 0;
+  margin-right: 10%;
+  display: block;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.industry-field p {
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+}
+
+.industry-field p:nth-of-type(1) {
+  background-color: #222a51;
+  padding: 10px 0;
+  margin: 10px 0;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.industry-field ul {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.industry-field ul li {
+  font-weight: 100;
+}
+
+/* industry業種紹介SP */
+@media screen and (max-width:590px) {
+  .industry {
+    background-image: none;
+    margin-bottom: 40px;
+    min-height: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    min-height: 500px;
+  }
+
+  .industry p {
+    color: #333;
+  }
+
+  .industry .pr-title h2 {
+    width: 100%;
+  }
+
+  .industry .position.subtitle {
+    padding: 10px 0;
+  }
+
+  .industry p {
+    font-size: 14px;
+  }
+
+  .industry-field {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .industry-field ul {
+    font-size: 14px;
+  }
+
+  .industry .pr-title {
+    background-image: url(img/dilp2bimg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background: contain;
+    background-position: center;
+    min-height: 200px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .industry .pr-title {
+    margin-bottom: 20px;
+  }
+
+  .industry .pr-title p {
+    font-size: 12px;
+    margin-right: 0;
+    margin-right: 19px;
+    margin-left: auto;
+    width: 75%;
+    display: block;
+    line-height: 1.5;
+  }
+
+  .industry .pr-title h2 {
+    margin-right: 19px;
+    margin-left: auto;
+    width: 80%;
+    display: block;
+    color: #ffd71f;
+  }
+
+}
+
+/* ご依頼の流れs05__wrap SP */
+@media screen and (max-width:590px) {
+  .pr-title {
+    width: 100%;
+  }
+
+  .pr-title h2 {
+    color: #333;
+    font-weight: 700;
+    background-image: none;
+    width: 64%;
+    font-size: 20px;
+  }
+
+  .workplan-img {
+    width: 30%;
+    justify-content: center;
+  }
+
+  .workplan-img img {
+    width: 129px
+  }
+}
+
+
+/*ご依頼の流れ*/
+.s05__wrap {
+  background-color: #ffd71f;
+  text-align: center;
+
+}
+
+.s05__wrap h2 {
+  color: #333;
+  font-weight: 700;
+}
+
+.s05__wrap ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 840px;
+}
+
+.s05__wrap ul li {
+  position: relative;
+  margin: 0 3.57% 4em;
+  width: 26%;
+}
+
+.workplanimg {
+  width: 100%;
+}
+
+.s05__wrap ul li img {
+  display: block;
+  margin: auto;
+  max-width: 150px;
+}
+
+.s05__wrap ul li p:nth-of-type(1) {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  color: #0068b4;
+  font-size: max(4rem, 15px);
+
+  text-align: center;
+}
+
+.s05__wrap ul li p:nth-of-type(2) {
+  position: absolute;
+  top: 115px;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.s05__wrap ul li p:nth-of-type(3) {
+
+  font-size: 16px;
+  line-height: 1.4;
+
+}
+
+/* ご依頼の流れs05__wrap SP */
+@media screen and (max-width:590px) {
+  .s05__wrap ul li {
+    width: 40%;
+  }
+
+  .s05__wrap ul li p:nth-of-type(1) {
+    font-size: 3rem;
+    top: 6px;
+  }
+
+  .s05__wrap ul li p:nth-of-type(2) {
+    font-size: 16px;
+    top: 111px;
+  }
+
+  .s05__wrap ul li p:nth-of-type(3) {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: -3px;
+  }
+}
+
+
+/* 人材サービスの仕組み */
+.service {
+  text-align: center;
+  background-image: url(img/dilp2bimg2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background: contain;
+  background-position: center;
+  min-height: 1000px;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.service h2 {
+  font-size: 50px;
+}
+
+.service>p:nth-child(1) {
+  font-size: 30px;
+}
+
+.service .position.subtitle {
+  padding: 10px 0 40px 0;
+}
+
+.service-field {
+  background-color: #003F7F;
+  width: 80%;
+  margin: 0;
+  margin-left: 2%;
+  color: #333;
+  font-weight: 100;
+  background-color: white;
+  padding: 20px 0;
+
+}
+
+.service-field+.service-field {
+  margin-top: 20px;
+}
+
+.service-title p {
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: dotted 1px #003F7F;
+  padding: 10px 0;
+  color: #003F7F;
+}
+
+
+.service-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-text {
+  width: 80%;
+  padding: 30px 0;
+}
+
+.service-text ul li {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.service-text1 p {
+  display: flex;
+  font-size: 20px;
+  text-align-last: left;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+.service-text2 p {
+  display: flex;
+  font-size: 16px;
+  text-align-last: left;
+  padding: 5px 0 20px;
+  font-weight: normal;
+}
+
+.service-text ul li+li {
+  margin-top: 10px;
+}
+
+.serviceimg {
+  width: 50%;
+}
+
+.serviceimg img {
+  width: 300px;
+}
+
+
+/* 人材サービスの仕組みSP */
+@media screen and (max-width:590px) {
+  .service {
+    background-size: 370%;
+  }
+
+  .service h2 {
+    font-size: 20px;
+  }
+
+  .service>p:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .service>.pr-title h2 {
+    width: 100%;
+  }
+
+  .service-flexbox {
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .service-text {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .serviceimg {
+    width: 100%;
+  }
+
+  .service-field {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .service-title p {
+    font-size: 25px;
+  }
+
+  .service-text1 p {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .service-text2 p {
+    font-size: 14px;
+  }
+
+  .service .position.subtitle {
+    padding: 10px 0 20px 0;
+  }
+
+  .service-text ul li {
+    font-size: 16px;
+  }
+
+  .service-text.service-text2 ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: 90%;
+  }
+
+  .service-text.service-text2 ul li {
+    justify-content: left;
+    align-items: center
+  }
+}
+
+
+
+
+
+
+/*notes*/
+/* よくある質問コピペ */
+.s07__wrap {
+  background-color: #f5f5f4;
+}
+
+.s07__wrap h2 {
+  color: #333;
+  font-weight: 700;
+
+}
+
+.s07__wrap dl {
+  margin: auto;
+  max-width: 800px;
+}
+
+.s07__wrap dt {
+  font-size: 2.2rem;
+  font-size: 1.7rem;
+  padding-left: 2.0em;
+  text-indent: -2.0em;
+  margin-bottom: 30px;
+}
+
+.s07__wrap dt:before {
+  background: #c60019;
+  color: #fff;
+  content: "Q";
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-right: 8px;
+  padding: .7% 2.2%;
+}
+
+.s07__wrap dd {
+  border-bottom: .5px solid #bbbcbb;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  padding-left: 2.8em;
+  text-indent: -2.8em;
+  font-size: 1.8rem;
+  line-height: 1.6;
+
+}
+
+.s07__wrap dd:before {
+  background: #0068b4;
+  color: #fff;
+  content: "A";
+  font-size: 1.7rem;
+  line-height: 1.2;
+  margin-right: 13px;
+  padding: .7% 2.4%;
+}
+
+.s07__wrap dd:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* よくあるご質問sp */
+@media screen and (max-width:590px) {
+  .s07__wrap dl {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .s07__wrap dd {
+    font-size: 16px;
+    line-height: 1.5;
+    text-indent: -2.5em;
+  }
+
+  .s07__wrap dt {
+    font-size: 16px;
+  }
+}
+
+
+/*notes*/
+/* サービス展開エリアコピペ */
+.s08__wrap {
+  background: #fff;
+
+}
+
+.s08__wrap h2 {
+  color: #333;
+  font-weight: 700;
+}
+
+.s08__wrap .b1__wrap {
+  background: top right / 42vw url(img/0801.svg) no-repeat;
+  margin: auto;
+  max-width: 1500px;
+  height: 37vw;
+  width: 90%;
+  min-height: 700px;
+
+}
+
+.s08__wrap .b1__wrap div {
+  padding-left: .6em;
+  margin-bottom: 1.5em;
+}
+
+.s08__wrap .b1__wrap div:nth-child(1) {
+  border-left: 2px solid #6699cc;
+}
+
+.s08__wrap .b1__wrap div:nth-child(2) {
+  border-left: 2px solid #51bbd1;
+}
+
+.s08__wrap .b1__wrap div:nth-child(3) {
+  border-left: 2px solid #71d5cb;
+}
+
+.s08__wrap .b1__wrap div:nth-child(4) {
+  border-left: 2px solid #bfc743;
+}
+
+.s08__wrap .b1__wrap div:nth-child(5) {
+  border-left: 2px solid #75b777;
+}
+
+.s08__wrap .b1__wrap div:nth-child(6) {
+  border-left: 2px solid #efb839;
+}
+
+.s08__wrap .b1__wrap div:nth-child(7) {
+  border-left: 2px solid #f58c3f;
+}
+
+.s08__wrap .b1__wrap div:nth-child(8) {
+  border-left: 2px solid #e77972;
+}
+
+.s08__wrap .b1__wrap div p:nth-of-type(1) {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.s08__wrap .b1__wrap div p:nth-of-type(2) {
+  font-size: 1.5rem;
+}
+
+/* サービス展開エリアsp */
+@media screen and (max-width:590px) {
+  .s08__wrap .b1__wrap {
+    background: bottom right / 89vw url(img/0801.svg) no-repeat;
+    margin: auto;
+    height: 1100px;
+    width: 90%;
+  }
+
+  .s08__wrap .b1__wrap div p:nth-of-type(1) {
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+
+  .s08__wrap .b1__wrap div p:nth-of-type(2) {
+    font-size: 16px;
+  }
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  font-size: 1.5rem;
+  height: 100%;
+  padding: 10px;
+}
+
+
+/* footersp */
+@media screen and (max-width:590px) {
+  footer {
+    font-size: 10px;
+  }
+}
+
+
+
+
+/* フォームボタン全体 */
+/* buttonはボタンの見た目 */
+/* form-buttonはボタンの位置 */
+.button {
+  font-size: 18px;
+  font-weight: bold;
+  /* 文字の太さ */
+  text-align: center;
+  letter-spacing: 0.1em;
+  width: 340px;
+  color: #fff;
+  /* 文字色 */
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 100vh;
+  /* ボタン幅 */
+  max-width: 550px;
+  /* 最低ボタン幅 */
+  transition: 0.3s;
+  background: #ff9200;
+  box-shadow: 2px 2px 3px -2px #555,
+    2px 2px 3px rgba(255, 255, 255, 0.8) inset;
+  /* お問い合わせボタン色 */
+
+}
+
+/* ボタンの見た目 */
+.button._form {
+  font-size: 16px;
+  width: 50%;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button .button-text {
+  line-height: 1;
+  display: inline-block;
+  padding: 0.2em 1.5em;
+  letter-spacing: 0;
+  background: #fff;
+  /* 下文字背景色 */
+  font-size: 90%;
+  /* 下文字サイズ */
+  border-radius: 5px;
+  /* お問い合わせの間のマージン */
+  margin-top: 10px;
+  color: #ff9200;
+  /* 下文字色 */
+}
+
+/* マウスオーバーした際のデザイン */
+.button:hover {
+  transform: scale(1.05);
+  background-color: #ecaa53;
+  transition: 0.4s;
+  box-shadow: 0px 0px 15px -5px#e7a4a4;
+  box-shadow: 2px 2px 3px -2px #555,
+    2px 2px 3px rgba(255, 255, 255, 0.8) inset;
+  /* お問い合わせボタン色 */
+
+}
+
+.button .button-text:hover {
+  color: #ff9200;
+  transition: 0.4s;
+  /* 下文字色 */
+}
+
+/* ボタンSP */
+@media screen and (max-width:590px) {
+  .button {
+    font-size: 16px;
+    margin: 7px 0;
+  }
+}
+
+
+
+
+
+
+/* フォーム画面遷移場所 */
+.uistep {
+  margin: 50px 0;
+}
+
+.uistep ol {
+  display: flex;
+  position: relative;
+  padding: 0 0 26px;
+}
+
+.uistep li {
+  display: block;
+  position: relative;
+  padding-bottom: 6px;
+  flex-basis: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.uistep li::before,
+.uistep li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  margin: auto;
+  height: 5px;
+}
+
+.uistep li::before {
+  left: 0;
+  width: 100%;
+}
+
+.uistep li::after {
+  right: 0;
+  width: 100%;
+}
+
+.uistep li:first-child::before {
+  left: 50%;
+  width: 100%;
+}
+
+.uistep li:last-child::after {
+  right: 50%;
+  width: 100%;
+}
+
+.uistep li:first-child::after,
+.uistep li:last-child::before {
+  width: 0;
+}
+
+.uistep li[aria-current="step"]::before,
+.uistep li[aria-current="step"]:not(:first-child)::after,
+.uistep li[aria-current="step"]~li::before,
+.uistep li[aria-current="step"]~li::after {
+  width: 50%;
+}
+
+.uistep li::before,
+.uistep li::after,
+.uistep li[aria-current="step"]:last-child::after {
+  z-index: 2;
+  background-color: #eb6100;
+}
+
+.uistep li[aria-current="step"]~li::before,
+.uistep li[aria-current="step"]~li::after,
+.uistep li+li[aria-current="step"]::after,
+.uistep li[aria-current="step"]:first-child::before,
+.uistep li[aria-current="step"]:first-child~li::before {
+  z-index: 1;
+  background-color: #ddd;
+}
+
+.uistep li .label {
+  color: #eb6100;
+  margin-left: 16px;
+
+}
+
+.uistep li[aria-current="step"] .label {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.uistep li[aria-current="step"]~li .label {
+  font-weight: normal;
+  color: inherit;
+}
+
+.uistep li .label::before,
+.uistep li .label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin: auto;
+}
+
+.uistep li .label::before {
+  bottom: -18px;
+  z-index: 4;
+  border: 3px solid #fff;
+  border-top: none;
+  border-left: none;
+  width: 8px;
+  height: 13px;
+  transform: translateX(-4px) rotate(43deg);
+}
+
+.uistep li .label::after {
+  bottom: -26px;
+  z-index: 3;
+  width: 26px;
+  height: 26px;
+  background-color: #eb6100;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.uistep li[aria-current="step"] .label::before,
+.uistep li[aria-current="step"]~li .label::before {
+  top: auto;
+  left: 50%;
+  bottom: -19px;
+  border: none;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.uistep li[aria-current="step"]~li .label::after {
+  background-color: #ddd;
+}
+
+.uistep li:last-child .label::before,
+.uistep li:last-child .label::after {
+  left: auto;
+  right: 50%;
+  transform: translateX(50%) rotate(0deg);
+}
+
+
+/* 登録フォーム */
+.regist {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.regist h3 {
+  margin-top: 4vw;
+  padding-bottom: 2vw;
+  font-size: 30px;
+  border-bottom: solid #cccccc 2px;
+  text-align: center;
+}
+
+.regist tr {
+  /* tdと高さ合わせる */
+  display: flex;
+  align-items: stretch;
+}
+
+tr+tr {
+  border-top: 1px solid #cccccc;
+}
+
+th {
+  border-right: 1px solid #cccccc;
+}
+
+table {
+  border: 1px solid #cccccc;
+  max-width: 1000px;
+}
+
+.regist th {
+  white-space: nowrap;
+  background-color: #eaf1fb;
+  text-align: center;
+  min-width: 200px;
+  height: auto;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.regist td {
+  text-align: left;
+  padding: 5%;
+  white-space: nowrap;
+  font-size: 16px;
+  width: 80%;
+  gap: 30px;
+}
+
+/* プレースホルダーの中 */
+.form-control,
+.form-select {
+  /* margin: 10px 0; */
+  font-size: 16px;
+  opacity: 1;
+  color: black;
+  height: 35px;
+}
+
+.form-select {
+  color: black;
+  opacity: 1;
+}
+
+option {
+  color: black;
+}
+
+/* プレースホルダーの色 */
+.form-control::placeholder {
+  color: gray;
+}
+
+.form-select::placeholder {
+  color: gray;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.bottombtn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-check label {
+  font-size: 16px;
+}
+
+.submit-confirm {
+  margin: 20px;
+}
+
+.bottombtn input,
+.bottombtn a {
+
+  width: 20%;
+}
+
+@media screen and (max-width:590px) {
+  .bottombtn {
+    margin-top: 10vw;
+  }
+
+  .form-check {
+    margin-top: 10vw;
+  }
+
+
+}
+
+/* 確認画面.リセット.戻るボタン */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+input.btn,
+button.btn {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+  max-width: 160px;
+}
+
+.btn--orange,
+a.btn--orange,
+button.btn--orange,
+input.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+  font-size: 16px;
+}
+
+.btn--gray,
+a.btn--gray,
+input.btn--gray {
+  color: #fff;
+  background-color: gray;
+  font-size: 16px;
+}
+
+.btn--blue,
+a.btn--blue,
+input.btn--blue {
+  color: #333;
+  border: solid 1px skyblue;
+  font-size: 16px;
+}
+
+.btn--orange:hover,
+a.btn--orange:hover,
+button.btn--orange:hover,
+input.btn--orange:hover {
+  color: #fff;
+  background-color: orangered;
+}
+
+.btn--blue:hover,
+a.btn--blue:hover,
+input.btn--blue:hover {
+  color: white;
+  background-color: skyblue;
+}
+
+.btn--gray:hover,
+a.btn--gray:hover,
+input.btn--gray:hover {
+  color: #fff;
+  background: darkgrey;
+}
+
+a.btn--radius,
+button.btn--radius,
+input.btn--radius {
+  border-radius: 50px;
+  width: 160px;
+}
+
+
+/* テーブルタイトル */
+.textfield {
+  display: flex;
+  gap: 1vh;
+}
+
+.textfield p {
+  padding-bottom: 10px;
+}
+
+/* 生年月日 */
+.birthday input,
+.workday select {
+  font-size: 16px;
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 0.375rem;
+  padding: 1% 10%;
+  height: 35px;
+}
+
+/* 電話番号 */
+.tel,
+.tel2,
+.tel3 {
+  width: 100px;
+}
+
+.telfield p {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+/* 性別　ラジオ */
+.ledy {
+  margin-left: 3vw;
+}
+
+
+text {
+  color: black;
+}
+
+/* checkbox radio共通 ボタン消去・生成、色付け  */
+input[type=checkbox], input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  vertical-align: -0.8rem;
+  transition: all .15s ease-out 0s;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+
+  outline: none;
+  border-radius: 10%;
+}
+
+/* Checkbox */
+input[type=checkbox] {
+  margin-right: 1rem;
+}
+
+input[type=checkbox]:before, input[type=checkbox]:after {
+  position: absolute;
+  content: "";
+  background: #fff;
+  transition: all .2s ease-in-out;
+}
+
+input[type=checkbox]:before {
+  left: 2px;
+  top: 6px;
+  width: 0;
+  height: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+input[type=checkbox]:after {
+  right: 9px;
+  bottom: 3px;
+  width: 2px;
+  height: 0;
+  transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  transition-delay: .2s;
+}
+
+input[type=checkbox]:checked:before {
+  left: 1px;
+  top: 10px;
+  width: 6px;
+  height: 2px;
+}
+
+input[type=checkbox]:checked:after {
+  right: 5px;
+  bottom: 1px;
+  width: 2px;
+  height: 14px;
+}
+
+input[type=checkbox]:indeterminate:before, input[type=checkbox]:indeterminate:after {
+  width: 7px;
+  height: 2px;
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+}
+
+input[type=checkbox]:indeterminate:before {
+  left: 1px;
+  top: 7px;
+}
+
+input[type=checkbox]:indeterminate:after {
+  right: 1px;
+  bottom: 7px;
+}
+
+/* Radio */
+input[type=radio] {
+  border-radius: 50%;
+  margin: 0.4rem;
+}
+
+input[type=radio]:checked:before {
+  transform: scale(1);
+}
+
+input[type=radio]:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 3px;
+  transform: scale(0);
+  transition: all ease-out 250ms;
+}
+
+/* orange */
+input[type=checkbox].orange, input[type=radio].orange {
+  border: 2px solid #eb6100;
+}
+
+input[type=checkbox].orange:checked, input[type=checkbox].orange:indeterminate, input[type=radio].orange:checked:before {
+  background: #eb6100;
+}
+
+/* table用 */
+table {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 17px;
+
+}
+
+/* チェックボックス - checkbox　ラジオボタン - radio サイズ */
+.size1 {
+  transform: scale(0.75);
+}
+
+.size2 {
+  transform: scale(1.0);
+}
+
+.size3 {
+  transform: scale(1.5);
+}
+
+.formbtn-clear {
+  margin: 2vw 0;
+  width: 45%;
+}
+
+.formbtn {
+  margin: 0 auto;
+}
+
+/* 登録フォームSP */
+
+@media screen and (max-width:590px) {
+  .regist {
+    max-width: 93%;
+
+  }
+
+  th {
+    border-right: none;
+  }
+
+  .regist th {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .regist tr,
+  .regist td {
+    display: block;
+    text-align: left;
+    min-width: auto;
+  }
+
+  .regist td {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .textfield {
+
+    gap: 7px;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .textfield.prefecturefield {
+    flex-direction: column;
+  }
+
+  .prefecturefield div:nth-child(2) {
+    margin-top: 20px;
+  }
+
+  .textfield.birthday,
+  .textfield.workday {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .gender.genderfield {
+    display: flex;
+    justify-content: center;
+  }
+
+  .textfield.gender {
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .regist td {
+    padding: 8% 0;
+  }
+
+  .prefecture {
+    width: 50%;
+  }
+
+  input.btn--blue {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    font-weight: normal;
+    width: 100%;
+
+  }
+
+  a.btn--blue,
+  input.btn--orange {
+    width: 45%;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .tel, .tel2, .tel3 {
+    width: 30%;
+  }
+
+  .form-control {
+    padding: 1% 2%;
+    height: 35px;
+  }
+
+  .confirm table {
+    max-width: 93%;
+  }
+
+  .formbtn {
+
+    margin-top: 5vw;
+  }
+
+  /* 確認フォームのボタンの幅 */
+  .bottombtn .bottombtn-position {
+    width: 45%;
+  }
+
+  /* 確認フォームのボタンの幅 */
+  .btn--blue.position,
+  .btn--orange.position {
+    width: 100%;
+  }
+}
+
+
+/* 登録確認フォーム */
+.confirm {
+  text-align: center;
+}
+
+.confirm .textfield {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+}
+
+.confirm table {
+  max-width: 93%;
+}
+
+.confirm-text {
+  padding: 5%;
+  font-size: 20px;
+}
+
+.bottombtn {
+  display: flex;
+  justify-content: center;
+  padding-top: 11vw;
+  gap: 20px;
+
+}
+
+.personallink {
+  border-bottom: solid 1px #222;
+}
+
+.form-title {
+  padding-top: 20%;
+}
+
+
+
+
+/* 登録完了画面 */
+
+.completebtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.completemsg {
+  margin-top: 4vw;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* エラー */
+.form-invalid {
+  color: red;
+  font-size: 16px;
+}
+
+.input-invalid {
+  border-color: #f0908d;
+  box-shadow: 0.5px 0.5px 3px 0.5px #f0908d;
+}
+
+@media screen and (max-width:590px) {
+  .err-msg-workday {
+    text-align: center;
+  }
+}
+
+
+/* 必須項目 */
+.required {
+  color: white;
+  font-weight: bold;
+  background-color: #eb6100;
+  padding: 2px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+  margin-left: 10px;
+}
