@@ -1,2 +1,1 @@
-# dilp2
-# QiitaArticle
+# dilp2-2
