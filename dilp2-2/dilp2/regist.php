@@ -46,7 +46,7 @@ include 'vars.php';
                                 <div class="textfield">
                                     <div>
                                         <p>御社名</p>
-                                        <input type="text" class="form-control family_name" placeholder="D.Iworks" name="family_name" id="family_name" maxlength="10" value="<?= getPostValue('family_name') ?>">
+                                        <input type="text" class="form-control family_name" placeholder="D.I.Works" name="family_name" id="family_name" maxlength="10" value="<?= getPostValue('family_name') ?>">
                                         <span class="err-msg-family_name"></span>
                                     </div>
                                     <div>

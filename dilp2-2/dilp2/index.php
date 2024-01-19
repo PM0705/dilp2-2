@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="【全国各地に紹介可能】D.Iworksの人材紹介サービスはハイレベル人材を業界最安値水準で提供します。D.Iworksは全国に拠点があるので、コールセンター、営業、接客、販売、事務等の様々な職種の即戦力スタッフをエリアを問わず全国各地の企業様にご紹介可能。最短翌日から紹介可能（※勤務期間は3カ月～）。小～大企業の多くの企業様が優秀な人材の採用とコスト削減を実現しています。人材派遣・人材紹介はD.Iworksにお任せください。" />
+    <meta name="description" content="【全国各地に紹介可能】D.I.Worksの人材紹介サービスはハイレベル人材を業界最安値水準で提供します。D.I.Worksは全国に拠点があるので、コールセンター、営業、接客、販売、事務等の様々な職種の即戦力スタッフをエリアを問わず全国各地の企業様にご紹介可能。最短翌日から紹介可能（※勤務期間は3カ月～）。小～大企業の多くの企業様が優秀な人材の採用とコスト削減を実現しています。人材派遣・人材紹介はD.I.Worksにお任せください。" />
     <title>株式会社D.I.Works【企業様向け公式】人材派遣・人材紹介会社をお探しの企業様</title>
     <link rel="icon" href="img/favicon.ico" id="favicon">
     <link rel="icon" type="img/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
     <link rel="manifest" href="/manifest.webmanifest">
-    <meta name="apple-mobile-web-app-title" content="D.Iworks">
-    <meta name="application-name" content="D.Iworks">
+    <meta name="apple-mobile-web-app-title" content="D.I.Works">
+    <meta name="application-name" content="D.I.Works">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +27,9 @@
         <header class="pc-mode">
             <ul>
                 <li><img src="img/logo.png" alt="diworksのロゴ"></li>
-                <li><a href="#headerlink1">派遣までの流れ</a></li>
-                <li><a href="#headerlink2">選ばれる理由</a></li>
-                <li><a href="#headerlink3">導入サービス</a></li>
+                <li><a href="#headerlink1">利用者の声</a></li>
+                <li><a href="#headerlink2">ご依頼の流れ</a></li>
+                <li><a href="#headerlink3">紹介可能業務</a></li>
                 <li><a href="#headerlink4">よくあるご質問</a></li>
                 <li><a href="regist.php">無料お見積り</a></li>
                 <li><a href="tel:03-6258-0901">03-6258-0901</a><br>【受付時間】平日9時～19時</li>
@@ -53,19 +53,19 @@
                                     <div class="first-checkimg">
                                         <img src="img/check.png" alt="TOPmainビジュアル画像">
                                     </div>
-                                    最短翌営業日〜対応可能
+                                    最短翌営業日からの対応が可能です
                                 </li>
                                 <li>
                                     <div class="first-checkimg">
                                         <img src="img/check.png" alt="TOPmainビジュアル画像">
                                     </div>
-                                    全国での対応が可能です。
+                                    全国での対応が可能です
                                 </li>
                                 <li>
                                     <div class="first-checkimg">
                                         <img src="img/check.png" alt="TOPmainビジュアル画像">
                                     </div>
-                                    雇用業務の簡素化、コスト削減のお手伝いが可能
+                                    雇用業務の簡素化、コスト削減のお手伝いが可能です
                                 </li>
                             </ul>
                         </div>
@@ -171,7 +171,7 @@
                 </div>
             </div>
             <div class="_troublefield pr-title position subtitle">
-                <h2>そんな企業のお困り事をD.I.Worksが解決します</h2>
+                <h2><a id="headerlink1">D.I.Worksはそんな企業のお困り事を解決しています</a></h2>
 
             </div>
             <!--trouble-voice候補１ -->
@@ -191,24 +191,23 @@
                         </li>
                         <li>
                             <div class="voicefield-company">
-                                <p>コールセンタ-業務 A社様</p>
-                                <p>繁忙期だけのスタッフが欲しい</p>
+                                <p>事務業務 B社様</p>
+                                <p>社員の産休中だけが欲しい</p>
                             </div>
                             <div class="voicefield-text">
-                                <p>新しいシステムのリリース前後はアクセスが集中するため人手が欲しいのですが、
-                                    閑散期は余ってしまうので3ヶ月ほどの人材が欲しいと困っていたところD.I.Worksさんに相談したら、スタッフを2日で紹介していただけました。
+                                <p>社員が産休に入るので、一人雇うより産休中だけ働いてもらえるスタッフを探していました。
+                                    D.I.Worksさんで相談したところ無期雇用契約をしている社員さんを派遣していただき産休中だけ人材補充することができました。
                                 </p>
                             </div>
                         </li>
                         <li>
                             <div class="voicefield-company">
-                                <p>コールセンタ-業務 A社様</p>
-                                <p>繁忙期だけのスタッフが欲しい</p>
+                                <p>販売・営業 C社様</p>
+                                <p>元気なスタッフが欲しい</p>
                             </div>
                             <div class="voicefield-text">
-                                <p>新しいシステムのリリース前後はアクセスが集中するため人手が欲しいのですが、
-                                    閑散期は余ってしまうので3ヶ月ほどの人材が欲しいと困っていたところD.I.Worksさんに相談したら、スタッフを2日で紹介していただけました。
-                                </p>
+                                <p>採用活動もコストだけがかかり深刻な人材不足に悩んでいました。
+                                    D.I.Worksさんに未経験でもよくて元気なスタッフがいないか相談したら、とても元気なスタッフを5名紹介していただけました。
                             </div>
                         </li>
                     </ul>
@@ -256,7 +255,7 @@
                         <p>日本全国どこでも<br>最適人材をマッチング</p>
                     </div>
                     <div class="pr-text">
-                        <p>全てのコーディネータが現場経験をしているからこそ知識も豊富で企業様の要望に的確に対応でき最適なスタッフをご紹介できることがD.Iworksの特徴でもあります。企業様の要望にどのような人材が必要かはスキルだけでなく求められる人柄や会社の雰囲気に合う人材の選定に自信があります。</p>
+                        <p>全てのコーディネータが現場経験をしているからこそ知識も豊富で企業様の要望に的確に対応でき最適なスタッフをご紹介できることがD.I.Worksの特徴でもあります。企業様の要望にどのような人材が必要かはスキルだけでなく求められる人柄や会社の雰囲気に合う人材の選定に自信があります。</p>
                     </div>
                 </div>
                 <div class="pr-field">
@@ -299,7 +298,7 @@
                 </div>
             </div>
             <div class="pr-title position subtitle pc-mode">
-                <h2>あらゆる業種のご紹介が可能です</h2>
+                <h2><a id="headerlink3">あらゆる業種のご紹介が可能です</a></h2>
                 <p>D.I.Worksは長期人材サービスのエキスパートです。<br>
                     全国の拠点から企業様のご希望の人材を最短翌営業日にご紹介することができる<br>
                     人材派遣・紹介サービスです。
@@ -347,30 +346,39 @@
                 </li>
                 <li>
                     <p>02</p>
-                    <img src="img/0502.svg" alt="電話のアイコン" />
+                    <div class="workplanimg">
+                        <img src="img/0502.svg" alt="電話のアイコン" />
+                    </div>
                     <p>営業担当よりご連絡</p>
                     <p>お問合せ後は弊社の担当者よりご連絡いたします。</p>
                 </li>
                 <li>
                     <p>03</p>
-                    <img src="img/0503.svg" alt="商談のアイコン" />
+                    <div class="workplanimg">
+                        <img src="img/0503.svg" alt="商談のアイコン" />
+                    </div>
                     <p>商談ヒアリング</p>
                     <p>御社の課題をヒアリングし、詳細を打ち合わせします。</p>
                 </li>
                 <li>
                     <p>04</p>
-                    <img src="img/0504.svg" alt="手続きのアイコン" />
+                    <div class="workplanimg">
+                        <img src="img/0504.svg" alt="手続きのアイコン" />
+                    </div>
                     <p>契約手続き</p>
                     <p>サービス提供にあたり、必要な手続きを行います。</p>
                 </li>
                 <li>
                     <p>05</p>
-                    <img src="img/0505.svg" alt="紹介開始のアイコン" />
+                    <div class="workplanimg">
+                        <img src="img/0505.svg" alt="紹介開始のアイコン" />
+                    </div>
                     <p>サービス紹介開始</p>
                     <p>最短翌日からご利用いただけます。</p>
                 </li>
             </ul>
         </section>
+
 
         <!-- フォーム帯 -->
         <section class="form">
@@ -493,7 +501,7 @@
                     一方「人材派遣」は、ある業務を遂行する人材（派遣スタッフ）を企業へ一定期間派遣するサービスで、派遣先企業と当社は「労働者派遣契約」、派遣スタッフと当社は「雇用契約」を結ぶことにより派遣先企業から派遣スタッフへの指揮命令が発生します。</dd>
                 <dt>勤務期間について教えてください</dt>
                 <dd>最短3カ月～ご紹介しております<br>
-                    また、最長6ヶ月の派遣期間終了後、貴社の正社員や直接雇用が可能です。</dd>
+                    また、最長6ヶ月の派遣期間終了後、貴社の正社員や直接雇用が可能です。詳細はお問合せくださいませ</dd>
             </dl>
         </section>
 
