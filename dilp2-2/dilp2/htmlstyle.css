@@ -46,7 +46,7 @@ body {
 
 /* sectionクラス単位のこと */
 .section {
-  padding: 80px 0;
+  padding: 100px 0 160px;
 }
 
 section {
@@ -210,6 +210,7 @@ h1 span {
 .first-checkimg img {
   width: 30px;
 }
+
 .first {
   background-image: url(img/dilp2topmain.png);
   background-size: 100%;
@@ -220,6 +221,7 @@ h1 span {
   width: 100%;
   overflow: hidden;
 }
+
 /* firstsectionSP */
 @media screen and (max-width:590px) {
   h1 {
@@ -262,10 +264,12 @@ h1 span {
   .first-textfield {
     min-height: 667px;
   }
-  .imgfield{
+
+  .imgfield {
     position: relative;
   }
-  .imgfield h2{
+
+  .imgfield h2 {
     position: absolute;
     top: 50%;
     left: 0%;
@@ -276,9 +280,10 @@ h1 span {
     font-size: 20px;
     text-align: center;
     background-color: rgba(255, 255, 255, .5);
- 
+
   }
-  .first{
+
+  .first {
     background-image: url(img/dilp2topmain.png);
     background-size: 362%;
 
@@ -483,6 +488,7 @@ h1 span {
   text-align: center;
   color: #1d4f9c;
 }
+
 .subtitle1 h2 {
   font-size: 50px;
   text-align: center;
@@ -528,7 +534,7 @@ h1 span {
 .form-flexbox {
   display: flex;
   justify-content: center;
-  gap: 10%;
+  gap: 5%;
   align-items: center;
 }
 
@@ -560,7 +566,6 @@ h1 span {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 40px;
 }
 
 .form-document p:nth-of-type(1) {
@@ -568,7 +573,7 @@ h1 span {
   color: white;
   padding: 10px;
   font-size: 25px;
- 
+
 }
 
 .form-document p:nth-of-type(2) {
@@ -606,7 +611,8 @@ h1 span {
     font-size: 20px;
     border-radius: 0px;
   }
-  .form-tel{
+
+  .form-tel {
     width: 90%;
   }
 }
@@ -674,14 +680,15 @@ h1 span {
   margin: 0 auto;
   color: #222a51;
 }
-.pr-fieldtitle p{
+
+.pr-fieldtitle p {
   font-size: 30px;
   text-align: center;
 }
 
 .primg {
   position: relative;
-  width: 100px;
+  width: 80px;
   height: 70px;
   margin-right: 10px
 }
@@ -698,10 +705,7 @@ h1 span {
   width: 80%;
   margin: 0 auto;
   padding: 20px 0;
-  font-weight: 100;
-}
-
-.pr-text {
+  /* font-weight: 100; */
   text-align: left;
 }
 
@@ -759,11 +763,12 @@ h1 span {
     width: 20%;
     height: 50px;
   }
-  .pr-fieldtitle p{
+
+  .pr-fieldtitle p {
     font-size: 25px;
-    
+
   }
-  
+
 }
 
 /* industry業種紹介 */
@@ -785,7 +790,7 @@ h1 span {
   ;
 }
 
-.industry> p {
+.industry>p {
   text-align: center;
   color: white;
   font-size: 35px;
@@ -808,7 +813,7 @@ h1 span {
   padding: 40px 0;
   margin-right: 10%;
   display: block;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .7);
 }
 
 .industry-field p {
@@ -823,7 +828,7 @@ h1 span {
   margin: 10px 0;
   color: white;
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 16px;
   border-radius: 50px;
 }
 
@@ -869,6 +874,8 @@ h1 span {
   .industry-field {
     margin: 0 auto;
     width: 90%;
+    border: solid 1px #333;
+    margin-top: 20px;
   }
 
   .industry-field ul {
@@ -879,16 +886,13 @@ h1 span {
     background-image: url(img/dilp2bimg.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    background: contain;
-    background-position: center;
+    background-position: bottom -38px right 0px;
     min-height: 200px;
     width: 100%;
     overflow: hidden;
   }
 
-  .industry .pr-title {
-    margin-bottom: 20px;
-  }
+
 
   .industry .pr-title p {
     font-size: 12px;
@@ -898,6 +902,7 @@ h1 span {
     width: 75%;
     display: block;
     line-height: 1.5;
+    color: black;
   }
 
   .industry .pr-title h2 {
@@ -908,6 +913,9 @@ h1 span {
     color: #ffd71f;
   }
 
+  .industry-titlebox {
+    margin-top: 23px;
+  }
 }
 
 /* ご依頼の流れs05__wrap SP */
@@ -979,7 +987,7 @@ h1 span {
 }
 
 .s05__wrap ul li p:nth-of-type(1) {
-  
+
   color: #0068b4;
   font-size: max(4rem, 15px);
 
@@ -1008,18 +1016,28 @@ h1 span {
 
   .s05__wrap ul li p:nth-of-type(1) {
     font-size: 3rem;
-    top: 6px;
+
   }
 
   .s05__wrap ul li p:nth-of-type(2) {
     font-size: 16px;
-    top: 111px;
+
+    margin-top: -88px;
   }
 
   .s05__wrap ul li p:nth-of-type(3) {
     font-size: 14px;
     line-height: 1.4;
     margin-top: -3px;
+  }
+
+  .workplanimg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .s05__wrap ul li img {
+    max-width: 50px;
   }
 }
 
@@ -1104,7 +1122,7 @@ h1 span {
 
 .service-text2 p {
   display: flex;
-  font-size: 16px;
+  font-size: 18px;
   text-align-last: left;
   padding: 5px 0 20px;
   font-weight: normal;
@@ -1117,6 +1135,7 @@ h1 span {
 .serviceimg {
   width: 50%;
 }
+
 .serviceimg img {
   width: 300px;
 }
@@ -1124,9 +1143,10 @@ h1 span {
 
 /* 人材サービスの仕組みSP */
 @media screen and (max-width:590px) {
-  .service{
+  .service {
     background-size: 370%;
   }
+
   .service h2 {
     font-size: 20px;
   }
