@@ -222,7 +222,7 @@
             </div>
             <div class="form-flexbox">
                 <div class="form-tel">
-                    <p>お急ぎの方はお電話ください</p>
+                    <p>お急ぎの方は<br class="sp-mode">お電話ください</p>
                     <p><a href="tel:03-6258-0901">03-6258-0901</a></p>
                     <p>【受付時間】平日9時～19時</p>
 
@@ -383,7 +383,7 @@
             </div>
             <div class="form-flexbox">
                 <div class="form-tel">
-                    <p>お急ぎの方はお電話ください</p>
+                    <p>お急ぎの方は<br class="sp-mode">お電話ください</p>
                     <p><a href="tel:03-6258-0901">03-6258-0901</a></p>
                     <p>【受付時間】平日9時～19時</p>
                 </div>
@@ -548,7 +548,7 @@
             </div>
             <div class="form-flexbox">
                 <div class="form-tel">
-                    <p>お急ぎの方はお電話ください</p>
+                    <p>お急ぎの方は<br class="sp-mode">お電話ください</p>
                     <p><a href="tel:03-6258-0901">03-6258-0901</a></p>
                     <p>【受付時間】平日9時～19時</p>
 

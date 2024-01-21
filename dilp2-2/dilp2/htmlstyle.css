@@ -572,6 +572,7 @@ h1 span {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-top: 40px;
 }
 
 .form-document p:nth-of-type(1) {
@@ -619,7 +620,7 @@ h1 span {
   }
 
   .form-tel {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -863,12 +864,16 @@ h1 span {
 /* industry業種紹介SP */
 @media screen and (max-width:590px) {
   .industry {
-    background-image: none;
-    margin-bottom: 40px;
-    min-height: none;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    min-height: 500px;
+    background-image: url(img/dilp2bimg.png);
+    background-size: 285%;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+    min-height: 900px;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    background-position: bottom 0px right -15px;
+
   }
 
   .industry p {
@@ -898,15 +903,7 @@ h1 span {
     font-size: 14px;
   }
 
-  .industry .pr-title {
-    background-image: url(img/dilp2bimg.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom -38px right 0px;
-    min-height: 200px;
-    width: 100%;
-    overflow: hidden;
-  }
+
 
 
 
@@ -915,22 +912,22 @@ h1 span {
     margin-right: 0;
     margin-right: 19px;
     margin-left: auto;
-    width: 75%;
+    width: 90%;
     display: block;
     line-height: 1.5;
-    color: black;
+    color: white;
   }
 
   .industry .pr-title h2 {
     margin-right: 19px;
     margin-left: auto;
-    width: 80%;
+    width: 90%;
     display: block;
     color: #ffd71f;
   }
 
   .industry-titlebox {
-    margin-top: 23px;
+    margin-top: 0px;
   }
 }
 
@@ -1028,7 +1025,8 @@ h1 span {
 /* ご依頼の流れs05__wrap SP */
 @media screen and (max-width:590px) {
   .s05__wrap ul li {
-    width: 40%;
+    width: 50%;
+    margin: 0 auto 30px;
   }
 
   .s05__wrap ul li p:nth-of-type(1) {
@@ -1038,19 +1036,19 @@ h1 span {
 
   .s05__wrap ul li p:nth-of-type(2) {
     font-size: 16px;
-
-    margin-top: -88px;
+    margin-top: -100px;
   }
 
   .s05__wrap ul li p:nth-of-type(3) {
     font-size: 14px;
     line-height: 1.4;
-    margin-top: -3px;
+    width: 80%;
+    margin: 5px auto 0;
   }
 
   .workplanimg {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
   }
 
   .s05__wrap ul li img {
@@ -1161,7 +1159,7 @@ h1 span {
 /* 人材サービスの仕組みSP */
 @media screen and (max-width:590px) {
   .service {
-    background-size: 370%;
+    background-size: 382%;
   }
 
   .service h2 {
