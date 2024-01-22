@@ -112,12 +112,11 @@
 
                             <div class="imgfield">
                                 <img src="img/dilp2topsp.png" alt="ITで働く男性と女性">
-                                <h2>長期人材派遣ならD.I.Worksにお任せください</h2>
                             </div>
-
-
                         </div>
-
+                    </div>
+                    <div class="first-topbartext">
+                        <h2 class="topbartext-h2">長期人材派遣なら<br class="sp-mode">D.I.Worksにお任せください</h2>
                     </div>
 
                 </div>
@@ -135,7 +134,7 @@
                             <div class="troublelistimg">
                                 <img src="img/check.png" alt="TOPmainビジュアル画像">
                             </div>
-                            慢性的な人手不足の状態を改善したい
+                            慢性的な人手不足の状態を改善したい。
                         </li>
                         <li>
                             <div class="troublelistimg">
@@ -153,25 +152,25 @@
                             <div class="troublelistimg">
                                 <img src="img/check.png" alt="TOPmainビジュアル画像">
                             </div>
-                            優秀な人材だったら自社にほしい
+                            優秀な人材だったら自社にほしい。
                         </li>
                         <li>
                             <div class="troublelistimg">
                                 <img src="img/check.png" alt="TOPmainビジュアル画像">
                             </div>
-                            異動した社員の後任の候補が欲しい
+                            異動した社員の後任の候補が欲しい。
                         </li>
                         <li>
                             <div class="troublelistimg">
                                 <img src="img/check.png" alt="TOPmainビジュアル画像">
                             </div>
-                            未経験でもいいから元気なスタッフが欲しい
+                            未経験でもいいから元気なスタッフが欲しい。
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="_troublefield pr-title position subtitle">
-                <h2><a id="headerlink1">D.I.Worksはそんな企業のお困り事を解決しています</a></h2>
+                <h2><a id="headerlink1">D.I.Worksは<br class="sp-mode">そんな企業のお困り事を<br class="sp-mode">解決しています</a></h2>
 
             </div>
             <!--trouble-voice候補１ -->
@@ -292,7 +291,7 @@
                     <p>様々な実績があるD.I.Worksなら</p>
                     <h2>あらゆる業種のご紹介が可能です</h2>
                     <p>D.I.Worksは長期人材サービスのエキスパートです。<br>
-                        全国の拠点から企業様のご希望の人材を最短翌営業日にご紹介することができる<br>
+                        全国の拠点から企業様のご希望の人材を最短翌営業日にご紹介することができる
                         人材派遣・紹介サービスです。
                     </p>
                 </div>

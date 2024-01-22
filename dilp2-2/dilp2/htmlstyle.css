@@ -243,7 +243,7 @@ h1 span {
     background-repeat: no-repeat;
     background: contain;
     background-position: bottom 0px right 0px;
-    min-height: 667px;
+    min-height: 550px;
   }
 
   .first-subtext {
@@ -256,6 +256,7 @@ h1 span {
     padding: 6px;
     width: 80%;
     font-size: 14px;
+    margin: 0 auto;
   }
 
   .first-subtext ul {
@@ -267,26 +268,9 @@ h1 span {
   }
 
   .first-textfield {
-    min-height: 667px;
+    min-height: 522px;
   }
 
-  .imgfield {
-    position: relative;
-  }
-
-  .imgfield h2 {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    margin-top: 0;
-    font-size: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, .5);
-    width: 100%;
-  }
 
   .first {
     background-image: url(img/dilp2topmain.png);
@@ -299,6 +283,16 @@ h1 span {
 
 
 /* troubleお困りではありませんか？ */
+.trouble.section {
+  padding: 80px 0;
+  background-image: url(img/trouble-2.png);
+  background-size: 112%;
+  background-repeat: no-repeat;
+  background: contain;
+  background-position: top;
+  min-height: 400px;
+}
+
 .troublelistimg {
   margin-right: 5px;
 }
@@ -310,9 +304,12 @@ h1 span {
 
 .troublelist ul {
   width: 73%;
-  margin: 0 auto;
+  margin: 15px auto;
   width: 61%;
   margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+
 
 }
 
@@ -324,17 +321,10 @@ h1 span {
   font-size: 30px;
   padding: 19px 0;
   font-size: 30px;
+  margin: 0 auto;
 }
 
-.troublefield {
-  background-image: url(img/trouble.jpg);
-  background-size: 600px;
-  background-repeat: no-repeat;
-  background: contain;
-  background-position: bottom -87px right 0px;
-  min-height: 400px;
 
-}
 
 ._troublefield {
   margin-top: 60px;
@@ -351,6 +341,7 @@ h1 span {
   justify-content: center;
   min-width: 1320px;
   gap: 25px;
+
 }
 
 .voicefield ul li {
@@ -407,43 +398,50 @@ h1 span {
 
 /* troubleお困りではありませんか？SP */
 @media screen and (max-width:590px) {
-  .troublefield {
-    background-image: none;
-    background-color: rgba(255, 255, 255, .8);
-
+  .troublelist ul {
+    margin: 0 auto;
+    width: 94%;
+    margin: 15px auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
   }
 
   .troublelist ul li {
-    width: 100%;
+    width: 94%;
     box-sizing: border-box;
     padding: 9px 0;
-    font-size: 16px;
+    font-size: 15px;
     align-items: baseline;
+    margin: 0 auto;
+  }
+
+  .trouble.section {
+    background-size: 494%;
+    background-position: top -219px right -407px;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: lighten;
   }
 
   .troublefield .pr-title.position1.subtitle1 {
-    background-image: url(img/trouble.jpg);
-    background-size: 243px;
-    background-repeat: no-repeat;
-    background: contain;
-    background-position: bottom -44px right -67px;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
     font-size: 50px;
     text-align: center;
     color: #1d4f9c;
   }
 
   .troublefield>.pr-title h2 {
-    margin-left: 9%;
-    font-size: 16px;
+    font-size: 21px;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    color: #1d4f9c;
 
   }
 
   ._troublefield.pr-title h2 {
     width: 100%;
-    font-size: 16px;
+    font-size: 22px;
+    color: #1d4f9c;
+    font-weight: bold;
   }
 
 
@@ -481,10 +479,11 @@ h1 span {
   .troublelistimg img {
     width: 22px;
   }
+
+  ._troublefield {
+    margin-top: 30px;
+  }
 }
-
-
-
 
 
 
@@ -493,12 +492,14 @@ h1 span {
   font-size: 50px;
   text-align: center;
   color: #1d4f9c;
+  font-weight: bold;
 }
 
 .subtitle1 h2 {
   font-size: 50px;
   text-align: center;
   color: #1d4f9c;
+  font-weight: bold;
 }
 
 .position.subtitle {
@@ -508,7 +509,7 @@ h1 span {
 /*  h2titleSP */
 @media screen and (max-width:590px) {
   .position.subtitle {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 
   .subtitle h2 {
@@ -572,7 +573,7 @@ h1 span {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 40px;
+
 }
 
 .form-document p:nth-of-type(1) {
@@ -621,6 +622,10 @@ h1 span {
 
   .form-tel {
     width: 80%;
+  }
+
+  .form-document {
+    margin-top: 40px;
   }
 }
 
@@ -895,7 +900,6 @@ h1 span {
   .industry-field {
     margin: 0 auto;
     width: 90%;
-    border: solid 1px #333;
     margin-top: 20px;
   }
 
@@ -908,26 +912,30 @@ h1 span {
 
 
   .industry .pr-title p {
-    font-size: 12px;
-    margin-right: 0;
-    margin-right: 19px;
-    margin-left: auto;
-    width: 90%;
+    font-size: 14px;
+    width: 88%;
     display: block;
     line-height: 1.5;
     color: white;
+    text-align: left;
+    text-align: left;
+    margin: 0 auto;
   }
 
   .industry .pr-title h2 {
-    margin-right: 19px;
-    margin-left: auto;
     width: 90%;
     display: block;
     color: #ffd71f;
+    font-size: 22px;
+    margin: 0 auto;
   }
 
   .industry-titlebox {
     margin-top: 0px;
+  }
+
+  .industry-titlebox p:nth-child(1) {
+    text-align: center;
   }
 }
 
@@ -1061,9 +1069,9 @@ h1 span {
 .service {
   text-align: center;
   background-image: url(img/dilp2bimg2.png);
-  background-size: 100%;
+
   background-repeat: no-repeat;
-  background: contain;
+  background-size: cover;
   background-position: center;
   min-height: 1000px;
   width: 100%;
@@ -1176,7 +1184,7 @@ h1 span {
 
   .service-flexbox {
     flex-direction: column;
-    gap: 20px;
+    gap: 21px;
 
   }
 
