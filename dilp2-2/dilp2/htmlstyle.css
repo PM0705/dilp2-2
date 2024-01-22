@@ -416,6 +416,7 @@ h1 span {
   }
 
   .trouble.section {
+    background-image: url(img/trouble-2sp.png);
     background-size: 494%;
     background-position: top -219px right -407px;
     background-color: rgba(255, 255, 255, 0.7);
@@ -874,7 +875,7 @@ h1 span {
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden;
-    min-height: 900px;
+    min-height: 600px;
     padding-bottom: 80px;
     padding-top: 40px;
     background-position: bottom 0px right -15px;
@@ -883,6 +884,7 @@ h1 span {
 
   .industry p {
     color: #333;
+    font-size: 16px;
   }
 
   .industry .pr-title h2 {
@@ -906,10 +908,6 @@ h1 span {
   .industry-field ul {
     font-size: 14px;
   }
-
-
-
-
 
   .industry .pr-title p {
     font-size: 14px;
@@ -960,6 +958,14 @@ h1 span {
 
   .workplan-img img {
     width: 129px
+  }
+
+  .industry-field dl dt {
+    font-size: 14px;
+  }
+
+  .industry-field dl dd {
+    font-size: 12px;
   }
 }
 
@@ -1034,7 +1040,7 @@ h1 span {
 @media screen and (max-width:590px) {
   .s05__wrap ul li {
     width: 50%;
-    margin: 0 auto 30px;
+    margin: 30px auto 30px;
   }
 
   .s05__wrap ul li p:nth-of-type(1) {
@@ -1044,7 +1050,7 @@ h1 span {
 
   .s05__wrap ul li p:nth-of-type(2) {
     font-size: 16px;
-    margin-top: -100px;
+    margin-top: -70px;
   }
 
   .s05__wrap ul li p:nth-of-type(3) {
@@ -1057,10 +1063,11 @@ h1 span {
   .workplanimg {
     width: 160px;
     height: 160px;
+    margin-top: -5px;
   }
 
   .s05__wrap ul li img {
-    max-width: 50px;
+    max-width: 90px;
   }
 }
 
@@ -1101,6 +1108,8 @@ h1 span {
   background-color: white;
   padding: 20px 0;
   background-color: rgba(255, 255, 255, .7);
+  margin-left: 10%;
+
 }
 
 .service-field+.service-field {
@@ -1122,6 +1131,7 @@ h1 span {
   align-items: center;
   width: 90%;
   margin: 0 auto;
+  gap: 30px;
 }
 
 .service-text {
